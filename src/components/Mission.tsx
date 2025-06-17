@@ -23,17 +23,17 @@ const Mission = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-stone-100 to-amber-50">
+    <section className="py-20 px-6 bg-gradient-to-b from-gray-soft to-beige-light">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           {items.map((item, index) => (
-            <Card key={index} className="bg-white/80 backdrop-blur-sm border-amber-200 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card key={index} className="bg-white/90 backdrop-blur-sm border-beige-primary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
-                <div className="bg-gradient-to-br from-amber-400 to-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="bg-gradient-to-br from-gold-metallic to-gold-dark w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <item.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-serif text-stone-800 mb-4">{item.title}</h3>
-                <p className="text-stone-600 leading-relaxed">{item.description}</p>
+                <h3 className="text-2xl font-serif text-gray-text mb-4">{item.title}</h3>
+                <p className="text-gray-text leading-relaxed">{item.description}</p>
               </CardContent>
             </Card>
           ))}

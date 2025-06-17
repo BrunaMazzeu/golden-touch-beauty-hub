@@ -10,9 +10,9 @@ const CallToAction = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-amber-600 to-amber-800 relative overflow-hidden">
+    <section className="py-20 px-6 bg-gradient-to-br from-gold-metallic to-gold-dark relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-15">
         <div className="absolute top-10 left-10">
           <Sparkles className="h-8 w-8 text-white animate-pulse" />
         </div>
@@ -30,22 +30,22 @@ const CallToAction = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">
           Pronta para se transformar 
-          <span className="block text-amber-200">com a gente?</span>
+          <span className="block text-beige-light">com a gente?</span>
         </h2>
         
-        <p className="text-xl text-amber-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-beige-light mb-10 max-w-2xl mx-auto leading-relaxed">
           Agende seu horário agora e descubra o que o cuidado personalizado pode fazer por você.
         </p>
 
         <Button 
           onClick={handleWhatsAppClick}
-          className="bg-white text-amber-700 hover:bg-amber-50 font-bold px-10 py-6 text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-white"
+          className="bg-white text-gold-dark hover:bg-beige-light hover:text-gold-metallic font-bold px-10 py-6 text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-white"
         >
           <MessageCircle className="mr-3 h-7 w-7" />
           Agende seu horário agora pelo WhatsApp
         </Button>
 
-        <div className="mt-12 text-amber-200">
+        <div className="mt-12 text-beige-light">
           <p className="text-lg">
             📍 Atendimento personalizado • 💫 Equipe especializada • ✨ Ambiente acolhedor
           </p>

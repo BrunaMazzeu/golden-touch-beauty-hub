@@ -5,12 +5,12 @@ const About = () => {
   return (
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-8">
-          Nossa <span className="text-amber-600">História</span>
+        <h2 className="text-4xl md:text-5xl font-serif text-gray-text mb-8">
+          Nossa <span className="text-gold-metallic">História</span>
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-gold-metallic to-gold-dark mx-auto mb-12"></div>
         
-        <p className="text-lg md:text-xl text-stone-700 leading-relaxed max-w-4xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-text leading-relaxed max-w-4xl mx-auto">
           Mariah Studio – Beleza e Estética nasceu em 2018, com o propósito de cuidar da beleza 
           e elevar a autoestima de cada cliente. Criamos um espaço acolhedor, humanizado, onde 
           cada detalhe é pensado com carinho, profissionalismo e dedicação.
