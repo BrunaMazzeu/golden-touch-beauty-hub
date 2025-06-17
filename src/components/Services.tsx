@@ -23,12 +23,12 @@ const Services = () => {
   }, [services.length]);
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-beige-light to-gray-soft">
+    <section className="py-20 px-6 bg-beige-light">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-serif text-gray-text mb-8">
-          Nossos <span className="text-gold-metallic">Serviços</span>
+          Nossos <span className="text-premium-gold">Serviços</span>
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-gold-metallic to-gold-dark mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-premium-gold mx-auto mb-12"></div>
 
         {/* Carrossel */}
         <div className="relative overflow-hidden mb-12">
@@ -38,9 +38,9 @@ const Services = () => {
           >
             {services.map((service, index) => (
               <div key={index} className="w-full md:w-1/3 flex-shrink-0 px-4">
-                <Card className="bg-white/90 backdrop-blur-sm border-beige-primary shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card className="bg-white border-beige-primary shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                   <CardContent className="p-8 text-center">
-                    <div className="bg-gradient-to-br from-gold-metallic to-gold-dark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="bg-premium-gold w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                       <service.icon className="h-10 w-10 text-white" />
                     </div>
                     <h3 className="text-2xl font-serif text-gray-text mb-3">{service.name}</h3>
@@ -59,7 +59,7 @@ const Services = () => {
               key={index}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex 
-                  ? 'bg-gold-metallic scale-125' 
+                  ? 'bg-gold-metallic scale-125 shadow-lg' 
                   : 'bg-beige-primary hover:bg-gold-light'
               }`}
               onClick={() => setCurrentIndex(index)}

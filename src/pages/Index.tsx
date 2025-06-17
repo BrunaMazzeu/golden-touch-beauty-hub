@@ -10,7 +10,7 @@ import CallToAction from '@/components/CallToAction';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-beige-light to-gray-soft">
+    <div className="min-h-screen bg-premium-beige">
       <Hero />
       <About />
       <Mission />

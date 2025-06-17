@@ -9,13 +9,13 @@ const Location = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-beige-light to-gray-soft">
+    <section className="py-20 px-6 bg-beige-light">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-gray-text mb-8">
-            Nossa <span className="text-gold-metallic">Localização</span>
+            Nossa <span className="text-premium-gold">Localização</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-gold-metallic to-gold-dark mx-auto"></div>
+          <div className="w-24 h-1 bg-premium-gold mx-auto"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -28,7 +28,7 @@ const Location = () => {
             
             <Button 
               onClick={handleMapClick}
-              className="bg-gradient-to-r from-gold-metallic to-gold-dark hover:from-gold-light hover:to-gold-metallic text-white font-semibold px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="bg-premium-gold hover:shadow-2xl text-white font-bold px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               <MapPin className="mr-2 h-5 w-5" />
               Ver no Mapa
@@ -36,7 +36,7 @@ const Location = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-white p-4 rounded-lg shadow-xl border border-beige-primary">
+            <div className="bg-white p-4 rounded-lg shadow-xl border-4 border-gold-metallic">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1068631152483!2d-46.65425598538834!3d-23.561414584682894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1635174849905!5m2!1spt-BR!2sbr"
                 width="100%"

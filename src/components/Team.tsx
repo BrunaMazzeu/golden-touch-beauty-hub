@@ -25,24 +25,24 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-gray-soft to-beige-light">
+    <section className="py-20 px-6 bg-gray-soft">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-gray-text mb-8">
-            Nossa <span className="text-gold-metallic">Equipe</span>
+            Nossa <span className="text-premium-gold">Equipe</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-gold-metallic to-gold-dark mx-auto"></div>
+          <div className="w-24 h-1 bg-premium-gold mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, index) => (
-            <Card key={index} className="bg-white/90 backdrop-blur-sm border-beige-primary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card key={index} className="bg-white border-beige-primary shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
               <CardContent className="p-6">
                 <div className="relative mb-6">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gold-metallic"
+                    className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gold-metallic shadow-lg"
                   />
                   <div className="absolute inset-0 rounded-full bg-gradient-to-t from-gold-metallic/20 to-transparent"></div>
                 </div>

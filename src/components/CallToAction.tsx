@@ -10,9 +10,9 @@ const CallToAction = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-gold-metallic to-gold-dark relative overflow-hidden">
+    <section className="py-20 px-6 bg-premium-gold relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute top-10 left-10">
           <Sparkles className="h-8 w-8 text-white animate-pulse" />
         </div>
@@ -39,14 +39,14 @@ const CallToAction = () => {
 
         <Button 
           onClick={handleWhatsAppClick}
-          className="bg-white text-gold-dark hover:bg-beige-light hover:text-gold-metallic font-bold px-10 py-6 text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-white"
+          className="bg-white text-gold-dark hover:bg-beige-light hover:text-gold-metallic font-bold px-12 py-6 text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-4 border-white"
         >
           <MessageCircle className="mr-3 h-7 w-7" />
           Agende seu horário agora pelo WhatsApp
         </Button>
 
         <div className="mt-12 text-beige-light">
-          <p className="text-lg">
+          <p className="text-lg font-medium">
             📍 Atendimento personalizado • 💫 Equipe especializada • ✨ Ambiente acolhedor
           </p>
         </div>

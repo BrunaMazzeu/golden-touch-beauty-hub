@@ -15,14 +15,14 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
         }}
       />
       
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
         <h1 className="text-5xl md:text-7xl font-serif mb-6 animate-fade-in">
-          <span className="text-gold-light">Mariah Studio</span>
+          <span className="text-premium-gold">Mariah Studio</span>
         </h1>
         <h2 className="text-2xl md:text-3xl font-light mb-4 text-beige-light">
           Beleza e Estética
@@ -33,7 +33,7 @@ const Hero = () => {
         
         <Button 
           onClick={handleWhatsAppClick}
-          className="bg-gradient-to-r from-gold-metallic to-gold-dark hover:from-gold-light hover:to-gold-metallic text-white font-semibold px-8 py-4 text-lg rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+          className="bg-premium-gold hover:shadow-2xl text-white font-bold px-10 py-6 text-lg rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-gold-light"
         >
           <MessageCircle className="mr-3 h-6 w-6" />
           Agende agora pelo WhatsApp

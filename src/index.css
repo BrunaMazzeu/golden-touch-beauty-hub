@@ -46,16 +46,16 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Custom color palette for Mariah Studio */
-    --gold-metallic: 45 86% 58%;
-    --gold-light: 47 88% 68%;
-    --gold-dark: 43 84% 48%;
-    --beige-primary: 35 20% 88%;
-    --beige-light: 36 25% 92%;
-    --beige-dark: 34 18% 82%;
-    --gray-soft: 210 15% 85%;
-    --gray-medium: 210 12% 75%;
-    --gray-text: 215 15% 45%;
+    /* Custom color palette for Mariah Studio - Premium Gold & Elegant */
+    --gold-metallic: 45 100% 50%;
+    --gold-light: 48 100% 65%;
+    --gold-dark: 42 95% 40%;
+    --beige-primary: 35 35% 85%;
+    --beige-light: 38 45% 92%;
+    --beige-dark: 32 25% 75%;
+    --gray-soft: 210 20% 88%;
+    --gray-medium: 215 15% 70%;
+    --gray-text: 220 15% 35%;
   }
 
   .dark {
@@ -157,6 +157,10 @@
     color: hsl(var(--gold-metallic));
   }
   
+  .text-gold-light {
+    color: hsl(var(--gold-light));
+  }
+  
   .text-gold-dark {
     color: hsl(var(--gold-dark));
   }
@@ -171,5 +175,21 @@
   
   .border-beige-primary {
     border-color: hsl(var(--beige-primary));
+  }
+
+  /* Premium gradient backgrounds */
+  .bg-premium-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-metallic)) 0%, hsl(var(--gold-dark)) 100%);
+  }
+  
+  .bg-premium-beige {
+    background: linear-gradient(135deg, hsl(var(--beige-light)) 0%, hsl(var(--beige-primary)) 100%);
+  }
+
+  .text-premium-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-metallic)) 0%, hsl(var(--gold-dark)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
