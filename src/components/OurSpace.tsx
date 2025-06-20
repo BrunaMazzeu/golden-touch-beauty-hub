@@ -1,8 +1,8 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, Image } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const OurSpace = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -63,6 +63,15 @@ const OurSpace = () => {
     }
   ];
 
+  // Auto-advance carousel every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % spaceImages.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [spaceImages.length]);
+
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % spaceImages.length);
   };
@@ -86,22 +95,17 @@ const OurSpace = () => {
         </div>
 
         {/* Galeria Principal */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-          <div className="relative">
+        <div className="flex justify-center mb-12">
+          <div className="relative max-w-4xl w-full">
             <Card className="overflow-hidden border-4 border-gold-light shadow-gold-lg">
               <CardContent className="p-0">
                 <div className="relative">
                   <img 
                     src={spaceImages[currentImageIndex].url} 
-                    alt={spaceImages[currentImageIndex].title}
-                    className="w-full h-[400px] object-cover"
+                    alt={`Espaço ${currentImageIndex + 1}`}
+                    className="w-full h-[500px] object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-white text-xl font-serif bg-black/50 px-4 py-2 rounded-lg">
-                      {spaceImages[currentImageIndex].title}
-                    </h3>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   
                   {/* Controles de navegação */}
                   <Button 
@@ -123,24 +127,6 @@ const OurSpace = () => {
               </CardContent>
             </Card>
           </div>
-
-          <div>
-            <div className="flex items-center mb-6">
-              <Image className="h-8 w-8 text-gold-metallic mr-3" />
-              <h3 className="text-3xl font-serif text-gray-text">
-                Ambiente Acolhedor e Elegante
-              </h3>
-            </div>
-            <p className="text-lg text-gray-text mb-6 leading-relaxed">
-              Cada cantinho do Mariah Studio foi pensado para criar uma atmosfera de bem-estar 
-              e tranquilidade. Desde a recepção até as salas de atendimento, tudo foi planejado 
-              para que você se sinta especial e relaxada.
-            </p>
-            <p className="text-lg text-gray-text leading-relaxed">
-              Nosso espaço combina elegância, conforto e funcionalidade, proporcionando 
-              o ambiente perfeito para cuidar da sua beleza com todo carinho que você merece.
-            </p>
-          </div>
         </div>
 
         {/* Miniaturas */}
@@ -157,7 +143,7 @@ const OurSpace = () => {
             >
               <img 
                 src={image.url} 
-                alt={image.title}
+                alt={`Miniatura ${index + 1}`}
                 className="w-full h-16 object-cover"
               />
               {index === currentImageIndex && (
