@@ -21,12 +21,13 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
-        <h1 className="text-5xl md:text-7xl font-serif mb-6 animate-fade-in">
-          <span className="text-premium-gold">Mariah Studio</span>
-        </h1>
-        <h2 className="text-2xl md:text-3xl font-light mb-4 text-beige-light">
-          Beleza e Estética
-        </h2>
+        <div className="mb-6 animate-fade-in">
+          <img 
+            src="/lovable-uploads/59c6ac5c-6034-4d59-a754-24b5a8b6762c.png" 
+            alt="Mariah Studio - Beleza e Estética"
+            className="mx-auto max-w-lg w-full h-auto"
+          />
+        </div>
         <p className="text-lg md:text-xl mb-8 text-gray-soft max-w-2xl mx-auto leading-relaxed">
           Cuidando da sua beleza com carinho e excelência desde 2018
         </p>
