@@ -5,7 +5,7 @@ import { MapPin } from 'lucide-react';
 
 const Location = () => {
   const handleMapClick = () => {
-    window.open('https://maps.google.com/?q=Mariah+Studio+Beleza+Estética', '_blank');
+    window.open('https://maps.google.com/?q=R.+São+Bento,+290+SL+2º+Sala+1+e+2+-+Centro+Histórico+de+São+Paulo,+São+Paulo+-+SP,+01001-000', '_blank');
   };
 
   return (
@@ -21,10 +21,19 @@ const Location = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-serif text-gray-text mb-6">Venha nos visitar!</h3>
-            <p className="text-lg text-gray-text mb-8 leading-relaxed">
-              Estamos localizados em um ambiente acolhedor e de fácil acesso. 
+            <p className="text-lg text-gray-text mb-4 leading-relaxed">
+              Estamos localizados no coração do Centro Histórico de São Paulo, em um ambiente acolhedor e de fácil acesso. 
               Nossa equipe está pronta para recebê-la com todo carinho e profissionalismo.
             </p>
+            
+            <div className="bg-white p-4 rounded-lg shadow-md border border-gold-light mb-6">
+              <h4 className="font-semibold text-gray-text mb-2">Endereço:</h4>
+              <p className="text-gray-text">
+                R. São Bento, 290 SL 2º Sala 1 e 2<br />
+                Centro Histórico de São Paulo<br />
+                São Paulo - SP, 01001-000
+              </p>
+            </div>
             
             <Button 
               onClick={handleMapClick}
@@ -38,7 +47,7 @@ const Location = () => {
           <div className="relative">
             <div className="bg-white p-4 rounded-lg shadow-xl border-4 border-gold-metallic">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1068631152483!2d-46.65425598538834!3d-23.561414584682894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1635174849905!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9158087665744!2d-46.63851228505048!3d-23.54424646739743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5839e8b3c2fb%3A0x7b5b1b1b1b1b1b1b!2sR.%20S%C3%A3o%20Bento%2C%20290%20-%20Centro%20Hist%C3%B3rico%20de%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001001-000!5e0!3m2!1spt-BR!2sbr!4v1635174849905!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
