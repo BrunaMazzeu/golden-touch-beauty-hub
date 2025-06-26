@@ -7,59 +7,31 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const OurSpace = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Placeholder images for the space - you can replace these with actual photos
+  // Fotos reais do espaço do salão
   const spaceImages = [
     {
-      url: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Recepção"
+      url: "/lovable-uploads/5207e103-0d54-469b-babb-4df19a4cae81.png",
+      title: "Área de Atendimento - Cadeiras e Poltronas"
     },
     {
-      url: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Sala de Atendimento"
+      url: "/lovable-uploads/a168a7f6-c10d-4821-b015-cf53e2410b6b.png",
+      title: "Espelhos Iluminados"
     },
     {
-      url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Área de Cabelos"
+      url: "/lovable-uploads/184a595e-52e8-434d-ac8f-d3e5b335efd9.png",
+      title: "Área de Lavagem - Lavatórios"
     },
     {
-      url: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Sala de Manicure"
+      url: "/lovable-uploads/f41a4886-0bb7-4f82-90c8-8bf39ba608cc.png",
+      title: "Sala de Atendimento Privativo"
     },
     {
-      url: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Espaço de Relaxamento"
+      url: "/lovable-uploads/29d78200-d4c6-4574-9f27-d288de689166.png",
+      title: "Mesa de Massagem e Relaxamento"
     },
     {
-      url: "https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Área de Espera"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Sala de Pedicure"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Ambiente Geral"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Detalhes do Espaço"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1600948836101-f958f8d38a90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Sala Privativa"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1590736969955-71cc94901144?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Área de Produtos"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Iluminação Natural"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Vista Geral do Studio"
+      url: "/lovable-uploads/da9db602-8980-4ae2-9cea-4e0c2a429b6c.png",
+      title: "Sala de Podologia"
     }
   ];
 
@@ -102,7 +74,7 @@ const OurSpace = () => {
                 <div className="relative">
                   <img 
                     src={spaceImages[currentImageIndex].url} 
-                    alt={`Espaço ${currentImageIndex + 1}`}
+                    alt={spaceImages[currentImageIndex].title}
                     className="w-full h-[500px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -130,7 +102,7 @@ const OurSpace = () => {
         </div>
 
         {/* Miniaturas */}
-        <div className="grid grid-cols-6 md:grid-cols-13 gap-2">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
           {spaceImages.map((image, index) => (
             <button
               key={index}
@@ -143,7 +115,7 @@ const OurSpace = () => {
             >
               <img 
                 src={image.url} 
-                alt={`Miniatura ${index + 1}`}
+                alt={image.title}
                 className="w-full h-16 object-cover"
               />
               {index === currentImageIndex && (
