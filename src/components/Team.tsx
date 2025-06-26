@@ -8,7 +8,7 @@ const Team = () => {
       name: "Clau Monteiro",
       role: "Proprietária",
       description: "Cabeleireira colorista e especialista em cortes femininos.",
-      image: "/lovable-uploads/17c81b2f-8a1e-4bf9-9ace-3a1ebbd743fd.png"
+      image: "/lovable-uploads/73b66156-de10-4bf1-ba30-9879a51a899f.png"
     },
     {
       name: "Wauani Lima",
@@ -20,7 +20,7 @@ const Team = () => {
       name: "Denise Romulo",
       role: "Especialista em Estética",
       description: "Especialista em depilação, mãos e pés. Reconhecida pela excelência e delicadeza no atendimento.",
-      image: "/lovable-uploads/a62a1bd4-2e2f-4bcf-a938-6476f944db13.png"
+      image: "/lovable-uploads/6193b2e5-3c10-434e-91df-82b3a243b97d.png"
     }
   ];
 
