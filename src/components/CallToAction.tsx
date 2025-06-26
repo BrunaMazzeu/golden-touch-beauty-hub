@@ -5,8 +5,8 @@ import { MessageCircle, Sparkles } from 'lucide-react';
 
 const CallToAction = () => {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de agendar um horário no Mariah Studio.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    const message = encodeURIComponent("Olá! Gostaria de agendar um horário no Mariah Studio vim pelo site.");
+window.open(`https://wa.me/5511981899144?text=${message}`, '_blank');
   };
 
   return (
