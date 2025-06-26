@@ -8,19 +8,19 @@ const Team = () => {
       name: "Clau Monteiro",
       role: "Proprietária",
       description: "Cabeleireira colorista e especialista em cortes femininos.",
-      image: "https://images.unsplash.com/photo-1594824658297-a464ff18a03e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/17c81b2f-8a1e-4bf9-9ace-3a1ebbd743fd.png"
     },
     {
       name: "Wauani Lima",
       role: "Podóloga e Terapeuta",
       description: "Podóloga e terapeuta corporal. Destaque pela atenção, cuidado e bem-estar em cada atendimento.",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/1134dc35-dcd1-413f-85c0-f6a54efc3617.png"
     },
     {
       name: "Denise Romulo",
       role: "Especialista em Estética",
       description: "Especialista em depilação, mãos e pés. Reconhecida pela excelência e delicadeza no atendimento.",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/a62a1bd4-2e2f-4bcf-a938-6476f944db13.png"
     }
   ];
 
