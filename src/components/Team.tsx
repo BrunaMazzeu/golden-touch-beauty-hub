@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "Denise Romulo",
       role: "Especialista em Estética",
-      description: "Especialista em depilação, mãos e pés. Reconhecida pela excelência e delicadeza no atendimento.",
+      description: "Especialista em epilação, mãos e pés. Reconhecida pela excelência e delicadeza no atendimento.",
       image: "/lovable-uploads/6193b2e5-3c10-434e-91df-82b3a243b97d.png"
     }
   ];
