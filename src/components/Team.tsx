@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const Team = () => {
   const team = [
     {
-      name: "Clau Monteiro",
+      name: "Clau Souza",
       role: "Proprietária",
       description: "Cabeleireira colorista e especialista em cortes femininos.",
       image: "/lovable-uploads/73b66156-de10-4bf1-ba30-9879a51a899f.png"

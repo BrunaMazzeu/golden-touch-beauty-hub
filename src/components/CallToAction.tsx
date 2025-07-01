@@ -5,8 +5,7 @@ import { MessageCircle, Sparkles } from 'lucide-react';
 
 const CallToAction = () => {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de agendar um horário no Mariah Studio vim pelo site.");
-window.open(`https://wa.me/5511981899144?text=${message}`, '_blank');
+    window.open('https://wa.me/5511981899144?text=Olá,+gostaria+de+saber+mais+sobre+seus+serviços,+vim+do+anúncio', '_blank');
   };
 
   return (
@@ -39,10 +38,10 @@ window.open(`https://wa.me/5511981899144?text=${message}`, '_blank');
 
         <Button 
           onClick={handleWhatsAppClick}
-          className="bg-white text-gold-dark hover:bg-beige-light hover:text-gold-metallic font-bold px-12 py-6 text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-4 border-white"
+          className="bg-white text-gold-dark hover:bg-beige-light hover:text-gold-metallic font-bold px-6 md:px-12 py-4 md:py-6 text-base md:text-xl rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-4 border-white w-full max-w-md mx-auto"
         >
-          <MessageCircle className="mr-3 h-7 w-7" />
-          Agende seu horário agora pelo WhatsApp
+          <MessageCircle className="mr-2 md:mr-3 h-5 md:h-7 w-5 md:w-7" />
+          <span className="text-sm md:text-xl">Agende seu horário agora pelo WhatsApp</span>
         </Button>
 
         <div className="mt-12 text-beige-light">
