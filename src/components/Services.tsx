@@ -36,7 +36,7 @@ const Services = () => {
         </div>
 
         <p className="text-lg text-gray-text max-w-3xl mx-auto">
-          Atendimentos personalizados e com produtos de qualidade das melhores marcas no mercado.
+          Atendimentos personalizados e com produtos de qualidade das melhores marcas do mercado.
         </p>
       </div>
     </section>
