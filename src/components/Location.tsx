@@ -23,7 +23,7 @@ const Location = () => {
             <h3 className="text-2xl font-serif text-gray-text mb-6">Venha nos visitar!</h3>
             <p className="text-lg text-gray-text mb-4 leading-relaxed">
               Estamos localizados no coração do Centro Histórico de São Paulo, em um ambiente acolhedor e de fácil acesso. 
-              Nossa equipe está pronta para recebê-la com todo carinho e profissionalismo.
+              Nossa equipe está pronta para recebê-lo(a) com todo carinho e profissionalismo.
             </p>
             
             <div className="bg-white p-4 rounded-lg shadow-md border border-gold-light mb-6">
