@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -31,13 +32,26 @@ const Hero = () => {
           Cuidando da sua beleza com carinho e excelência desde 2018
         </p>
         
-        <Button 
-          onClick={handleWhatsAppClick} 
-          className="bg-premium-gold hover:shadow-2xl text-white font-bold px-10 py-6 text-lg rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-gold-light"
-        >
-          <MessageCircle className="mr-3 h-6 w-6" />
-          Agende agora pelo WhatsApp
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button 
+            onClick={handleWhatsAppClick} 
+            className="bg-premium-gold hover:shadow-2xl text-white font-bold px-10 py-6 text-lg rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-gold-light"
+          >
+            <MessageCircle className="mr-3 h-6 w-6" />
+            Agende agora pelo WhatsApp
+          </Button>
+
+          <Button 
+            asChild
+            variant="outline"
+            className="border-2 border-white text-white hover:bg-white hover:text-premium-gold font-bold px-8 py-6 text-lg rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300"
+          >
+            <Link to="/contatos">
+              <Phone className="mr-2 h-5 w-5" />
+              Ver Contatos
+            </Link>
+          </Button>
+        </div>
       </div>
       
       {/* Decorative Elements */}
